@@ -4,7 +4,6 @@ namespace Src\Controllers;
 
 use Src\Exceptions\NotFoundException;
 use Src\Views\View;
-use Src\Services\Db;
 use Src\Models\Articles\Article;
 use Src\Models\Users\User;
 
