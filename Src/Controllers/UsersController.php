@@ -1,5 +1,6 @@
 <?php
 namespace Src\Controllers;
+use Src\Exceptions\InvalidArgumentException;
 use Src\Views\View;
 use Src\Models\Users\User;
 class UsersController
@@ -13,7 +14,12 @@ class UsersController
     public function signUp()
     {
         if(!empty($_POST)){
-            $user = User::signUp($_POST);
+            try {
+                $user = User::signUp($_POST);
+            } catch (InvalidArgumentException $e) {
+                $this->view->renderHtml('Users/signUp.php',['error'=>$e->getMessage()]);
+                return;
+            }
         }
         $this->view->renderHtml('Users/signUp.php');
 

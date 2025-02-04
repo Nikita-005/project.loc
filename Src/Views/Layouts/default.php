@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/project.loc/css/style.css" />
+    <link rel="stylesheet" href="/project.loc/css/style.css" >
     <title>MONO_KURSOVAYA</title>
-  </head>
-  <body>
+</head>
+<body>
     <div class="home-page">
       <div class="div">
         <header class="header">
@@ -73,8 +73,8 @@
       </div>
     </footer>
 
-    
+    </div>
 
-    
-  </body>
+    </div>
+</body>
 </html>
