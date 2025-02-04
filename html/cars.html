@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автопарк - MONO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cars.css">
+</head>
+<body>
+    <!-- Header из index.html -->
+    <header class="header">
+        <div class="header-content">
+            <a href="index.html">
+                <img class="logo" src="img/logo.png" alt="Logo">
+                <div class="text-wrapper">MONO</div>
+            </a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <div class="menu-container">
+                <div class="menu-background"></div>
+                <label for="menu-toggle" class="menu-button"></label>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html">Главная</a>
+                <a href="about.html">О нас</a>
+                <a href="cars.html">Наши автомобили</a>
+                <a href="rent.html">Аренда</a>
+                <a href="faq.html">FAQ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="cars-section">
+            <h2 class="section-title">Наши автомобили</h2>
+            <div class="cars-grid">
+                <!-- Карточка автомобиля -->
+                <div class="car-card">
+                    <div class="car-image-wrapper">
+                        <img src="cars/image_bmw.png" alt="BMW M5" class="car-image">
+                    </div>
+                    <div class="car-content">
+                        <h2>BMW M5</h2>
+                        <p class="car-description">Cамая мощная, быстрая, по-настоящему экстремальная модель 5 серии,  это истинное воплощение мощи, элегантности и технологического совершенства.</p>
+                        <div class="car-features">
+                            <div class="feature">
+                                <img src="img/User1.svg" alt="Места">
+                                <span>5</span>
+                            </div>
+                            <div class="feature">
+                                <img src="img/Gearbox.svg" alt="Коробка">
+                                <span>АКПП</span>
+                            </div>
+                        </div>
+                        <div class="car-footer">
+                            <div class="price">ОТ 7900₽/сутки</div>
+                            <button class="book-btn">ЗАБРОНИРОВАТЬ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image-wrapper">
+                        <img src="cars/image_merc.png" alt="Mercedes CLS 63 AMG" class="car-image">
+                    </div>
+                    <div class="car-content">
+                        <h2>Mercedes CLS 63 AMG</h2>
+                        <p class="car-description">Просторный, комфортный автомобиль с характером спортивного болида. Завораживающий дизайн, выдающиеся технические характеристики и образцовая экономичность: все эти качества сочетает в себе этот автомобиль.</p>
+                        <div class="car-features">
+                            <div class="feature">
+                                <img src="img/User1.svg" alt="Места">
+                                <span>5</span>
+                            </div>
+                            <div class="feature">
+                                <img src="img/Gearbox.svg" alt="Коробка">
+                                <span>АКПП</span>
+                            </div>
+                        </div>
+                        <div class="car-footer">
+                            <div class="price">ОТ 7900₽/сутки</div>
+                            <button class="book-btn">ЗАБРОНИРОВАТЬ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image-wrapper">
+                        <img src="cars/image_audi.png" alt="Audi R8" class="car-image">
+                    </div>
+                    <div class="car-content">
+                        <h2>Audi R8</h2>
+                        <p class="car-description">Легендарный спорткар с  экстремально высокой мощностью и скоростью. Разгон от 0 до 100 км/ч составляет 4,6 секунды. Максимальная скорость в целях безопасности ограничена электроникой на отметке 301 км/ч.</p>
+                        <div class="car-features">
+                            <div class="feature">
+                                <img src="img/User1.svg" alt="Места">
+                                <span>2</span>
+                            </div>
+                            <div class="feature">
+                                <img src="img/Gearbox.svg" alt="Коробка">
+                                <span>АКПП</span>
+                            </div>
+                        </div>
+                        <div class="car-footer">
+                            <div class="price">ОТ 13900₽/сутки</div>
+                            <button class="book-btn">ЗАБРОНИРОВАТЬ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image-wrapper">
+                        <img src="cars/image_cadilac.png" alt="Cadillac Escalade" class="car-image">
+                    </div>
+                    <div class="car-content">
+                        <h2>CADILLAC ESCALADE</h2>
+                        <p class="car-description">Этот легендарный внедорожник предлагает непревзойденное сочетание элегантности, передовых технологий и выдающейся производительности, создавая уникальный опыт вождения для самых требовательных водителей.</p>
+                        <div class="car-features">
+                            <div class="feature">
+                                <img src="img/User1.svg" alt="Места">
+                                <span>8</span>
+                            </div>
+                            <div class="feature">
+                                <img src="img/Gearbox.svg" alt="Коробка">
+                                <span>АКПП</span>
+                            </div>
+                        </div>
+                        <div class="car-footer">
+                            <div class="price">ОТ 7900₽/сутки</div>
+                            <button class="book-btn">ЗАБРОНИРОВАТЬ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image-wrapper">
+                        <img src="cars/image_porche.png" alt="Porsche 911 Turbo S" class="car-image">
+                    </div>
+                    <div class="car-content">
+                        <h2>Porsche 911 Turbo S</h2>
+                        <p class="car-description">911 в модификации Turbo S может конкурировать практически со всеми существующими суперкарами. Его ставят на ринг даже с Ferrari! Этот автомобиль способен свести с ума и бросить вызов законам физики.</p>
+                        <div class="car-features">
+                            <div class="feature">
+                                <img src="img/User1.svg" alt="Места">
+                                <span>4</span>
+                            </div>
+                            <div class="feature">
+                                <img src="img/Gearbox.svg" alt="Коробка">
+                                <span>АКПП</span>
+                            </div>
+                        </div>
+                        <div class="car-footer">
+                            <div class="price">ОТ 15900₽/сутки</div>
+                            <button class="book-btn">ЗАБРОНИРОВАТЬ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image-wrapper">
+                        <img src="cars/image_L7.png" alt="Lixiang L7" class="car-image">
+                    </div>
+                    <div class="car-content">
+                        <h2>Lixiang L7</h2>
+                        <p class="car-description">Флагманский 5-местный внедорожник, созданный для семейного отдыха. Комфортное пространство — огромный салон и комфортабельные кресла для каждого члена семьи.</p>
+                        <div class="car-features">
+                            <div class="feature">
+                                <img src="img/User1.svg" alt="Места">
+                                <span>5</span>
+                            </div>
+                            <div class="feature">
+                                <img src="img/Gearbox.svg" alt="Коробка">
+                                <span>АКПП</span>
+                            </div>
+                        </div>
+                        <div class="car-footer">
+                            <div class="price">ОТ 10900₽/сутки</div>
+                            <button class="book-btn">ЗАБРОНИРОВАТЬ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image-wrapper">
+                        <img src="cars/image_tesla.png" alt="Tesla Model S" class="car-image">
+                    </div>
+                    <div class="car-content">
+                        <h2>Tesla Model S</h2>
+                        <p class="car-description">Tesla Model S обладает самым большим запасом хода. А так же она обладает самым быстрым ускорением среди электромобилей. Это делает ее самым мощным автомобилем в истории.</p>
+                        <div class="car-features">
+                            <div class="feature">
+                                <img src="img/User1.svg" alt="Места">
+                                <span>5</span>
+                            </div>
+                            <div class="feature">
+                                <img src="img/Gearbox.svg" alt="Коробка">
+                                <span>АКПП</span>
+                            </div>
+                        </div>
+                        <div class="car-footer">
+                            <div class="price">ОТ 5900₽/сутки</div>
+                            <button class="book-btn">ЗАБРОНИРОВАТЬ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image-wrapper">
+                        <img src="cars/image_zeekr.png" alt="Zeekr 001" class="car-image">
+                    </div>
+                    <div class="car-content">
+                        <h2>Zeekr 001</h2>
+                        <p class="car-description">Форма кузова сочетает в себе элегантность и удовольствие от вождения купе с простором и проходимостью внедорожника. Сиденья из натуральной кожи Monaco Nappa, бархатный потолок из микрофибры, необыкновенный стиль отражается в каждой детали.</p>
+                        <div class="car-features">
+                            <div class="feature">
+                                <img src="img/User1.svg" alt="Места">
+                                <span>5</span>
+                            </div>
+                            <div class="feature">
+                                <img src="img/Gearbox.svg" alt="Коробка">
+                                <span>АКПП</span>
+                            </div>
+                        </div>
+                        <div class="car-footer">
+                            <div class="price">ОТ 10900₽/сутки</div>
+                            <button class="book-btn">ЗАБРОНИРОВАТЬ</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Добавьте больше карточек автомобилей по аналогии -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer из index.html -->
+    <footer class="footer">
+        <div class="footer-container">
+          <!-- Левая колонка -->
+          <div class="footer-contacts">
+            <h3 class="footer-title">Контакты</h3>
+            <p class="footer-address">г. Санкт-Петербург, Морская наб 17, к1</p>
+            <a href="tel:89528125252" class="footer-phone">8 (952) 812 52 52</a>
+            <a href="mailto:MONO@gmail.com" class="footer-email">MONO@gmail.com</a>
+            
+            <!-- Социальные сети -->
+            <div class="footer-social">
+                <a href="https://web.whatsapp.com/"><img src="img/whatsapp.svg" alt="WhatsApp" class="social-icon"></a>
+                <a href="https://www.instagram.com/bmw?igsh=MXJrNjlpNWk3YWlycA=="><img src="img/instagram.svg" alt="Instagram" class="social-icon"></a>
+                <a href="https://youtube.com/@forsazh?si=PqZTfVkC8e2g-Tqf"><img src="img/youtube.svg" alt="YouTube" class="social-icon"></a>
+                <a href="https://t.me/mono000"><img src="img/telegram.svg" alt="Telegram" class="social-icon"></a>
+            </div>
+          </div>
+  
+          <!-- Правая колонка -->
+          <div class="footer-nav">
+            <a href="index.html">Главная</a>
+            <a href="about.html">О нас</a>
+            <a href="cars.html">Наши автомобили</a>
+            <a href="rent.html">Аренда</a>
+            <a href="faq.html">FAQ</a>
+          </div>
+  
+          <!-- Правовая информация -->
+          <div class="footer-legal">
+            Информация на данном сайте носит исключительно ознакомительный характер и не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса РФ.
+          </div>
+  
+          <!-- Копирайт -->
+          <div class="footer-copyright">
+            (C) 2024 «MONO» — аренда автомобилей в Санкт-Петербурге
+          </div>
+        </div>
+      </footer>
+    
+    <script>
+        document.querySelectorAll('.book-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                window.location.href = 'rent.html';
+            });
+        });
+    </script>
+</body>
+</html> 

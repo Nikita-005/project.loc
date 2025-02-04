@@ -1,0 +1,92 @@
+.faq-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.message {
+    max-width: 80%;
+    padding: 15px 20px;
+    border-radius: 20px;
+    position: relative;
+    line-height: 1.4;
+}
+
+.message p {
+    margin: 0;
+}
+
+.question {
+    align-self: flex-end;
+    background-color: #f0f0f0;
+    border-bottom-right-radius: 5px;
+}
+
+.answer {
+    align-self: flex-start;
+    background-color: #000;
+    color: white;
+    border-bottom-left-radius: 5px;
+}
+
+/* Стрелочки для сообщений */
+.question::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: #f0f0f0;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+
+.answer::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .message {
+        max-width: 85%;
+    }
+
+    .section-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-section {
+        padding: 20px 15px;
+    }
+
+    .message {
+        max-width: 90%;
+        padding: 12px 15px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+} 

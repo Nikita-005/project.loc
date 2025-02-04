@@ -1,0 +1,162 @@
+/* Основной контейнер */
+.cars-section {
+    padding: 60px 20px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.cars-section h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+/* Контейнер для карточек */
+.cars-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Стили карточки */
+.car-card {
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+.car-image-wrapper {
+    width: 100%;
+    height: 300px;
+}
+
+.car-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.car-content {
+    padding: 20px;
+}
+
+.car-content h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.car-description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.car-features {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.feature img {
+    width: 20px;
+    height: 20px;
+}
+
+.car-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.book-btn {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    min-width: 400px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.book-btn:hover {
+    background: #333;
+}
+
+/* Десктопная версия */
+@media (min-width: 768px) {
+    .car-card {
+        flex-direction: row;
+        min-height: 400px;
+        align-items: stretch;
+    }
+
+    .car-image-wrapper {
+        width: 45%;
+        height: auto;
+        min-height: 400px;
+    }
+
+    .car-content {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px;
+    }
+
+    .car-footer {
+        margin-top: auto;
+    }
+}
+
+/* Мобильная версия */
+@media (max-width: 767px) {
+    .car-card {
+        flex-direction: column;
+    }
+
+    .car-image-wrapper {
+        width: 100%;
+        height: 250px;
+    }
+
+    .car-content {
+        width: 100%;
+    }
+
+    .car-footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .book-btn {
+        width: 100%;
+        min-width: unset;
+    }
+} 

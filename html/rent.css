@@ -1,0 +1,100 @@
+.rent-section {
+    min-height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.rent-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.rent-form-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.rent-form-card h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #333;
+}
+
+.rent-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-bottom-color: #000;
+}
+
+.form-notice {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin: 20px 0;
+    line-height: 1.4;
+}
+
+.submit-btn {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background: #333;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .rent-form-card {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rent-section {
+        padding: 20px 15px;
+    }
+    
+    .rent-form-card h2 {
+        font-size: 20px;
+    }
+    
+    .form-group input {
+        font-size: 14px;
+    }
+    
+    .submit-btn {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+} 

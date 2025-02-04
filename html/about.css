@@ -1,0 +1,152 @@
+/* Основные стили страницы */
+.about-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Стили для основного контента */
+.about-content {
+    padding: 40px 0;
+}
+
+/* Общие стили для секций */
+.about-section,
+.history-section,
+.values-section,
+.why-us-section,
+.team-section {
+    max-width: 1400px;
+    margin: 0 auto 50px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили заголовков */
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Стили для текстовых блоков */
+.about-description,
+.history-description,
+.team-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Стили для списков */
+.values-list,
+.why-us-list {
+    list-style: none;
+    padding: 0;
+}
+
+.values-list li,
+.why-us-list li {
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.values-list li:before,
+.why-us-list li:before {
+    content: "•";
+    color: #000000;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .about-page {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .about-section,
+    .history-section,
+    .values-section,
+    .why-us-section,
+    .team-section {
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+}
+
+/* Анимации при прокрутке */
+.about-section,
+.history-section,
+.values-section,
+.why-us-section,
+.team-section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Добавляем задержку для последовательной анимации секций */
+.history-section { animation-delay: 0.2s; }
+.values-section { animation-delay: 0.4s; }
+.why-us-section { animation-delay: 0.6s; }
+.team-section { animation-delay: 0.8s; }
+
+/* Стили для шапки */
+.header .overlap {
+    background-color: white;
+    height: 15vh;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    position: absolute;
+    width: 61px;
+    height: 64px;
+    top: 57px;
+    left: 60px;
+}
+
+.text-wrapper {
+    position: absolute;
+  top: 68px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #000000;
+  z-index: 10;
+}
+ 

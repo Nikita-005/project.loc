@@ -1,0 +1,659 @@
+/* Импорт шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap');
+
+/* Базовые настройки */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  color: #333333;
+}
+/* Шапка */
+.header .logo {
+  position: absolute;
+  width: 61px;
+  height: 64px;
+  top: 57px;
+  left: 60px;
+  z-index: 10;
+}
+
+.header .text-wrapper {
+  position: absolute;
+  top: 68px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #000000;
+  z-index: 10;
+}
+
+.header .header-content{
+  background-color: white;
+    height: 15vh;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Главный контейнер */
+.home-page .div {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+/* Верхняя секция */
+.home-page .overlap {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(./img/porche.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Навигация */
+.home-page .logo {
+  position: absolute;
+  width: 61px;
+  height: 64px;
+  top: 57px;
+  left: 60px;
+  z-index: 10;
+}
+
+.home-page .text-wrapper {
+  position: absolute;
+  top: 68px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #000000;
+  z-index: 10;
+}
+
+
+
+/* Поисковый блок */
+.search-form {
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.date-input-group {
+  margin-bottom: 20px;
+}
+
+.date-label {
+  display: block;
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.date-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #E5E5E5;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #333333;
+  background: #FFFFFF;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.date-input::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+
+.search-button {
+  width: 100%;
+  padding: 15px;
+  background: #000000;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background: #333333;
+}
+
+/* Медиа запросы */
+@media screen and (max-width: 768px) {
+  .search-form {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .date-label {
+    font-size: 14px;
+  }
+
+  .date-input {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .search-button {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+/* Секции */
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  font-family: 'TT Firs Neue', Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+
+/* Секция преимуществ */
+.features-section {
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.features-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature-card {
+  width: 100%;
+  background: #FFFFFF;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  position: relative;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-card .title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 10px;
+  padding-right: 80px; /* Место для иконки */
+}
+
+.feature-card .description {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  padding-right: 80px; /* Место для иконки */
+}
+
+.feature-card img {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+/* Секция автомобилей */
+.cars-section {
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.cars-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.car-card {
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.car-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.car-info {
+  padding: 20px;
+  background: #FFFFFF;
+  border-radius: 0 0 20px 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.car-info h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.car-info p {
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.car-details {
+  display: flex;
+  gap: 20px;
+  margin-top: auto;
+  padding-top: 15px;
+  border-top: 1px solid #EEEEEE;
+}
+
+.car-detail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.car-detail img {
+  width: 20px;
+  height: 20px;
+}
+
+.car-detail span {
+  font-size: 14px;
+  color: #666666;
+}
+
+/* Медиа запросы */
+@media screen and (max-width: 1200px) {
+  .cars-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cars-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .car-image {
+    height: 200px;
+  }
+}
+
+/* Фиксированные размеры для десктопа */
+@media screen and (min-width: 1920px) {
+  .features-container,
+  .cars-container {
+    max-width: 1600px;
+  }
+  
+  .car-card {
+    min-height: 500px;
+  }
+  
+  .car-image {
+    height: 300px;
+  }
+}
+
+/* Секция отзывов */
+.reviews-section {
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.reviews-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 20px;
+}
+
+.review-card {
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+/* Эффект поднятия карточки при наведении */
+.review-card:hover {
+  transform: translateY(-5px);
+}
+
+.review-author {
+  font-weight: 600;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.review-text {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333333;
+  margin: 0;
+}
+
+/* Медиа запросы */
+@media screen and (max-width: 1024px) {
+  .reviews-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reviews-container {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .review-card {
+    padding: 15px;
+  }
+}
+
+/* Футер */
+.footer {
+  width: 100%;
+  padding: 40px 20px;
+  background: #FFFFFF;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+/* Левая колонка */
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+
+.footer-address,
+.footer-phone,
+.footer-email {
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Правая колонка */
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-nav a {
+  font-size: 16px;
+  color: #666666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #000000;
+}
+
+/* Социальные сети */
+.footer-social {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  transition: opacity 0.3s ease;
+}
+
+.social-icon:hover {
+  opacity: 0.8;
+}
+
+/* Правовая информация */
+.footer-legal {
+  grid-column: 1 / -1;
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.5;
+  margin-top: 30px;
+}
+
+.footer-copyright {
+  grid-column: 1 / -1;
+  font-size: 14px;
+  color: #666666;
+  margin-top: 20px;
+}
+
+/* Медиа запросы */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-social {
+    margin-top: 20px;
+  }
+
+  .footer-title {
+    font-size: 18px;
+  }
+
+  .footer-address,
+  .footer-phone,
+  .footer-email,
+  .footer-nav a {
+    font-size: 14px;
+  }
+}
+
+
+
+
+/* Кнопка "Посмотреть все" */
+.view-all-button {
+    display: block;
+    width: fit-content;
+    margin: 40px auto 0;
+    padding: 15px 30px;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    color: #000000;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    text-decoration: none; /* Добавляем это свойство, так как теперь это ссылка */
+}
+
+.view-all-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (max-width: 768px) {
+    .view-all-button {
+        padding: 12px 25px;
+        font-size: 14px;
+        margin-top: 30px;
+    }
+}
+
+/* Скрываем чекбокс */
+.menu-toggle {
+  display: none;
+}
+
+/* Контейнер для кнопки меню */
+.menu-container {
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  z-index: 1000;
+  width: 40px;
+  height: 40px;
+}
+
+/* Белый круг */
+.menu-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Кнопка меню */
+.menu-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 1001;
+  background: url('img/menu.svg') center/contain no-repeat;
+  transition: background-image 0.3s ease;
+}
+
+/* Изменение иконки при открытом меню */
+#menu-toggle:checked ~ .menu-container .menu-button {
+  background-image: url('img/close.svg');
+}
+
+/* Выезжающее меню */
+.nav-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background: #FFFFFF;
+  z-index: 999;
+  padding: 80px 40px;
+  transition: right 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Когда чекбокс отмечен, показываем меню */
+.menu-toggle:checked ~ .nav-menu {
+  right: 0;
+}
+
+/* Меняем иконку на крестик когда меню открыто */
+.menu-toggle:checked ~ .menu-button {
+  background-image: url('img/close.svg');
+}
+
+/* Стили для пунктов меню */
+.nav-menu a {
+  font-size: 24px;
+  color: #000000;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.nav-menu a:hover {
+  opacity: 0.7;
+}
+
+/* Медиа запросы */
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    padding: 60px 20px;
+  }
+  
+  .nav-menu a {
+    font-size: 20px;
+  }
+}
