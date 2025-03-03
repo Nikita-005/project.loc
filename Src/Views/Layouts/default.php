@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/project.loc/css/style.css" >
+    <base href="/project.loc/">
+    <link rel="stylesheet" href="css/style.css" >
     <title>MONO_KURSOVAYA</title>
 </head>
 <body>
@@ -12,7 +13,7 @@
         <header class="header">
           <div class="header-content">
             <a href="index.html">
-              <img class="logo" src="/project.loc/img/logo.png" alt="Logo">
+              <img class="logo" src="img/logo.png" alt="Logo">
               <div class="text-wrapper">MONO</div>
             </a>
           <!-- Чекбокс и лейбл для меню -->
@@ -29,6 +30,8 @@
                 <a href="rent.html">Аренда</a>
                 <a href="faq.html">FAQ</a>
               </nav>
+          <?= !empty($user) ? '<p>Привет, '.$user->getNickname().' '.'<a href="users/logout">Выход</a>'.'</p>' : '<a href="users/login">Войдите на сайт</a>' ?>
+
           </div>
         </header>
         <main>

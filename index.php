@@ -28,8 +28,11 @@ try {
     $controller->$actionName(...$matches);
 } catch (\Src\Exceptions\DbException $e) {
     $view = new \Src\Views\View('default');
-    $view->renderHtml('Errors/500.php', ['error'=>$e->getMessage()],500);
+    $view->renderHtml('Errors/500.php', ['error'=>$e->getMessage()], 500);
 }catch (\Src\Exceptions\NotFoundException $e) {
     $view = new \Src\Views\View('default');
-    $view->renderHtml('Errors/404.php', ['error'=>$e->getMessage()],404);
+    $view->renderHtml('Errors/404.php', ['error'=>$e->getMessage()], 404);
+}catch (\Src\Exceptions\UnauthorizedException $e) {
+    $view = new \Src\Views\View('default');
+    $view->renderHtml('Errors/401.php', ['error'=>$e->getMessage()], 401);
 }
