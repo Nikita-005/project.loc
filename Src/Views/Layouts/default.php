@@ -12,7 +12,7 @@
       <div class="div">
         <header class="header">
           <div class="header-content">
-            <a href="index.html">
+            <a href="">
               <img class="logo" src="img/logo.png" alt="Logo">
               <div class="text-wrapper">MONO</div>
             </a>

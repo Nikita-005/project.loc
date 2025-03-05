@@ -6,5 +6,6 @@ return [
         'dbname' => 'iv1k_22',
         'user' => 'root',
         'password' => '',
-    ]
+    ],
+    'base_dir' => '/project.loc/',
 ];

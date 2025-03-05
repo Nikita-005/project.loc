@@ -7,6 +7,8 @@ try {
     $route = $_GET['route'] ?? '';
     $routes = require __DIR__.'/Src/Config/routes.php';
 
+    $GLOBALS['base_dir'] = (require __DIR__.'/Src/Config/settings.php')['base_dir'];
+
     $isRouteFound = false;
     foreach($routes as $pattern => $controllerAndAction){
         preg_match($pattern, $route, $matches);

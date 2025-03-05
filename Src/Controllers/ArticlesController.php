@@ -35,7 +35,7 @@ class ArticlesController extends Controller
         }
         if($this->user === null){
             throw new UnauthorizedException();
-        }        
+        }
         if(!empty($_POST)){
             try {
                 $article->updateFromArray($_POST);
@@ -43,7 +43,7 @@ class ArticlesController extends Controller
                 $this->view->renderHtml('Articles/edit.php', ['error' => $e->getMessage(), 'article' => $article]);
                 return;
             }
-            header('Location: /project.loc/articles/' . $article->getId(), true, 302);
+            header("Location: {$this->baseDir}articles/" . $article->getId(), true, 302);
             exit();
         }
         $this->view->renderHtml('articles/edit.php', ['article' => $article]);
@@ -56,9 +56,9 @@ class ArticlesController extends Controller
         }
         if($this->user === null){
             throw new UnauthorizedException();
-        }  
+        }
         $article->delete();
-        header('Location: project.loc/articles/all', true, 302);
+        header("Location: {$this->baseDir}articles/all", true, 302);
     }
     public function add():void{
 
@@ -73,7 +73,7 @@ class ArticlesController extends Controller
                 $this->view->renderHtml('Articles/add.php', ['error' => $e->getMessage()]);
                 return;
             }
-            header('Location: /project.loc/articles/' . $article->getId(), true, 302);
+            header("Location: {$this->baseDir}articles/" . $article->getId(), true, 302);
             exit();
         }
         $this->view->renderHtml('articles/add.php');
