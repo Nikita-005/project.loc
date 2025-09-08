@@ -39,4 +39,9 @@ class View
             echo "Не найден файл по пути $fileName";die();
         }
     }
+    public function displayJson($data, int $code = 200){
+        header('Content-type: application/json; charset=utf-8');
+        http_response_code($code);
+        echo json_encode($data);
+    }
 }

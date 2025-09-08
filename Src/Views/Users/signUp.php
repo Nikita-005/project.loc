@@ -4,7 +4,7 @@
     <div style="background-color: red"><?= $error ?></div>
 <?php endif; ?>
 
-<form action="/project.loc/users/register" method="POST">
+<form action="" method="POST">
     <label>Nickname <input type="text" name="nickname" value="<?= $_POST['nickname'] ?? '' ?>"></label>
     <label>Email <input type="text" name="email" value="<?= $_POST['email'] ?? '' ?>"></label>
     <label>Password <input type="password" name="password" ></label>

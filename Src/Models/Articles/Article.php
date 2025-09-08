@@ -36,7 +36,7 @@ class Article extends ActiveRecordEntity
     public function setName($newName)
     {
         $this->name = $newName;
-    } 
+    }
     public function setText($newText)
     {
         $this->text = $newText;
@@ -74,12 +74,12 @@ class Article extends ActiveRecordEntity
         }
         if(empty($fields['text'])){
             throw new InvalidArgumentException('Не передан текст статьи');
-        }     
+        }
         $this->setName($fields['name']);
         $this->setText($fields['text']);
 
         $this->save();
 
-        return $this;   
+        return $this;
     }
 }

@@ -31,7 +31,7 @@ class UsersController extends Controller
             try {
                 $user = User::login($_POST);
                 UsersAuthService::createToken($user);
-                header('Location: /project.loc');
+                header("Location: {$this->baseDir}");
                 exit();
             } catch (InvalidArgumentException $e) {
                 $this->view->renderHtml('Users/login.php',['error'=>$e->getMessage()]);
@@ -45,7 +45,7 @@ class UsersController extends Controller
     public function logout()
     {
         setcookie('token', '', -1, '/', '', false, true);
-        header('Location: /project.loc');
+        header("Location: {$this->baseDir}");
         exit();
     }
 }

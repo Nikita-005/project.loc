@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="/project.loc/">
+    <base href="<?= $GLOBALS['base_dir']  ?>">
     <link rel="stylesheet" href="css/style.css" >
     <title>MONO_KURSOVAYA</title>
 </head>
@@ -26,8 +26,8 @@
               <nav class="nav-menu">
                 <a href="index.html">Главная</a>
                 <a href="about.html">О нас</a>
-                <a href="cars.html">Наши автомобили</a>
-                <a href="rent.html">Аренда</a>
+                <a href="catalog">Каталог товаров</a>
+                <a href="articles/all">Статьи</a>
                 <a href="faq.html">FAQ</a>
               </nav>
           <?= !empty($user) ? '<p>Привет, '.$user->getNickname().' '.'<a href="users/logout">Выход</a>'.'</p>' : '<a href="users/login">Войдите на сайт</a>' ?>

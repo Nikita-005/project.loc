@@ -22,6 +22,7 @@ try {
         throw new \Src\Exceptions\NotFoundException();
     }
 
+
     $controllerName = $controllerAndAction[0];
     $actionName = $controllerAndAction[1];
 
@@ -37,4 +38,7 @@ try {
 }catch (\Src\Exceptions\UnauthorizedException $e) {
     $view = new \Src\Views\View('default');
     $view->renderHtml('Errors/401.php', ['error'=>$e->getMessage()], 401);
+}catch (\Src\Exceptions\ForbiddenException $e) {
+    $view = new \Src\Views\View('default');
+    $view->renderHtml('Errors/403.php', ['error'=>$e->getMessage()], 403);
 }
